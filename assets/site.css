@@ -1,0 +1,31 @@
+:root{--paper:#F2EFEA;--card:#FFFFFF;--ink:#26221F;--ink2:#6B635C;--ink3:#968D85;--line:#E6E1DA;--accent:#BD6824;--accent-soft:#FCEAD2}
+@media (prefers-color-scheme:dark){:root{--paper:#1C1A18;--card:#26231F;--ink:#F2EFEA;--ink2:#BDB4AB;--ink3:#8E857C;--line:#3A3530;--accent:#E0873A;--accent-soft:#3A2A1A}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Hiragino Sans","Noto Sans KR","Noto Sans JP","Segoe UI",sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px 64px}
+a{color:var(--accent)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700}
+.brand img{width:36px;height:36px;border-radius:9px}
+.langs{display:flex;gap:4px;background:var(--card);border-radius:999px;padding:4px}
+.langs button{border:0;background:transparent;color:var(--ink2);font:inherit;font-size:14px;padding:4px 12px;border-radius:999px;cursor:pointer}
+.langs button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.hero{display:flex;align-items:flex-end;gap:16px;margin:8px 0 20px}
+.hero img{width:72px;height:auto}
+h1{font-size:28px;line-height:1.3;margin:0 0 6px;letter-spacing:-.02em}
+h2{font-size:18px;margin:28px 0 8px}
+.sub{color:var(--ink2);margin:0}
+.card{background:var(--card);border-radius:20px;padding:20px 22px;margin:16px 0}
+.card h2:first-child{margin-top:0}
+.meta{color:var(--ink3);font-size:14px}
+ul{padding-left:20px}
+li{margin:4px 0}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600;border-radius:14px;padding:12px 18px;margin:4px 8px 4px 0}
+.apps{display:grid;gap:12px}
+.app{display:flex;gap:14px;align-items:center;background:var(--card);border-radius:20px;padding:16px;text-decoration:none;color:var(--ink)}
+.app img{width:56px;height:56px;border-radius:14px}
+.app small{display:block;color:var(--ink2)}
+footer{margin-top:40px;color:var(--ink3);font-size:14px}
+[data-lang]{display:none}
+[data-lang].on{display:block}
